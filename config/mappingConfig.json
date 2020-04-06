@@ -1,0 +1,184 @@
+{
+    "describedResource": "http://example.com#SampleOrder",
+    "typeDescription": "http://example.com#SampleTypeDescription",
+    "columns": [
+        {
+            "isIdentifier": true,
+            "columnName": "indize"
+        },
+        {
+            "isIdentifier": false,
+            "columnName": "NominalCurrentProgram"
+        },
+        {
+            "isIdentifier": false,
+            "columnName": "NominalCurrentProcessStep"
+        },
+        {
+            "isIdentifier": false,
+            "columnName": "NominalProcessTimeSec"
+        },
+        {
+            "isIdentifier": false,
+            "columnName": "NominalTemperatureHC1"
+        },
+        {
+            "isIdentifier": false,
+            "columnName": "NominalTemperatureHC2"
+        },
+        {
+            "isIdentifier": false,
+            "columnName": "NominalTemperatureHC3"
+        },
+        {
+            "isIdentifier": false,
+            "columnName": "NominalPressure"
+        },
+        {
+            "isIdentifier": false,
+            "columnName": "NominalVacuum"
+        },
+        {
+            "isIdentifier": false,
+            "columnName": "ActualCurrentProgram"
+        },
+        {
+            "isIdentifier": false,
+            "columnName": "ActualCurrentProcessStep"
+        },
+        {
+            "isIdentifier": false,
+            "columnName": "ActualProcessTime"
+        },
+        {
+            "isIdentifier": false,
+            "columnName": "ActualTemperatureHC1"
+        },
+        {
+            "isIdentifier": false,
+            "columnName": "ActualTemperatureHC2"
+        },
+        {
+            "isIdentifier": false,
+            "columnName": "ActualTemperatureHC3"
+        },
+        {
+            "isIdentifier": false,
+            "columnName": "ActualPressure"
+        },
+        {
+            "isIdentifier": false,
+            "columnName": "ActualVacuum"
+        }
+    ],
+    "mappings": [
+        {
+            "id": "#SollTemperatur1",
+            "typeDescription": "http://lionFacts#TMR001",
+            "expressionGoal": "Requirement",
+            "logicInterpretation": "=",
+            "columnNames": [
+                "NominalTemperatureHC1"
+            ]
+        },
+        {
+            "id": "#SollTemperatur2",
+            "typeDescription": "http://lionFacts#TMR002",
+            "expressionGoal": "Requirement",
+            "logicInterpretation": "=",
+            "columnNames": [
+                "NominalTemperatureHC2"
+            ]
+        },
+        {
+            "id": "#SollTemperatur3",
+            "typeDescription": "http://lionFacts#TMR003",
+            "expressionGoal": "Requirement",
+            "logicInterpretation": "=",
+            "columnNames": [
+                "NominalTemperatureHC3"
+            ]
+        },
+        {
+            "id": "#SollDruck",
+            "typeDescription": "http://lionFacts#DMR001",
+            "expressionGoal": "Requirement",
+            "logicInterpretation": "=",
+            "columnNames": [
+                "NominalPressure"
+            ]
+        },
+        {
+            "id": "#SollVakuum",
+            "typeDescription": "http://lionFacts#VMR001",
+            "expressionGoal": "Requirement",
+            "logicInterpretation": "=",
+            "columnNames": [
+                "NominalVacuum"
+            ]
+        },
+        {
+            "id": "#SollZeit",
+            "typeDescription": "http://lionFacts#MZR001",
+            "expressionGoal": "Requirement",
+            "logicInterpretation": "=",
+            "columnNames": [
+                "NominalProcessTimeSec"
+            ]
+        },
+        {
+            "id": "#IstTemperatur1",
+            "typeDescription": "http://lionFacts#TMR001",
+            "expressionGoal": "Actual_Value",
+            "logicInterpretation": "=",
+            "columnNames": [
+                "ActualTemperatureHC1"
+            ]
+        },
+        {
+            "id": "#IstTemperatur2",
+            "typeDescription": "http://lionFacts#TMR002",
+            "expressionGoal": "Actual_Value",
+            "logicInterpretation": "=",
+            "columnNames": [
+                "ActualTemperatureHC2"
+            ]
+        },
+        {
+            "id": "#IstTemperatur3",
+            "typeDescription": "http://lionFacts#TMR003",
+            "expressionGoal": "Actual_Value",
+            "logicInterpretation": "=",
+            "columnNames": [
+                "ActualTemperatureHC3"
+            ]
+        },
+        {
+            "id": "#IstDruck",
+            "typeDescription": "http://lionFacts#DMR001",
+            "expressionGoal": "Actual_Value",
+            "logicInterpretation": "=",
+            "columnNames": [
+                "ActualPressure"
+            ]
+        },
+        {
+            "id": "#IstVakuum",
+            "typeDescription": "http://lionFacts#VMR001",
+            "expressionGoal": "Actual_Value",
+            "logicInterpretation": "=",
+            "columnNames": [
+                "ActualVacuum"
+            ]
+        },
+        {
+            "id": "#IstZeit",
+            "typeDescription": "http://lionFacts#MZR001",
+            "expressionGoal": "Actual_Value",
+            "logicInterpretation": "=",
+            "columnNames": [
+                "ActualProcessTime"
+            ]
+        }
+    ]
+}
